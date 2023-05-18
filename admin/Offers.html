@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King - Offers</title>
+	<link rel="stylesheet" href="css/offers.css">
+</head>
+<body>
+	<nav>
+		<img src="images/bk-removebg-preview.png" class="logo">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="Restaurants.html">Restaurant</a></li>
+				<li><a href="Offers.html">Offers</a></li>
+				<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">More</a>
+				<div class="dropdown-content">
+				<a href="aboutus.html">About Us</a>
+				<a href="login.html">Log In</a>
+				<a href="signup.html">Sign Up</a>
+				<a href="delivery.html">Delivery</a>
+				<a href="customer.html">Customer Review</a>
+			</ul>
+		</nav>
+	<h2>Offers</h2>
+	
+	<video autoplay muted loop id="myVideo">
+	<source src="video/The Heavy Hitting Burger - Promo Video.mp4" type="video/mp4">
+	</video>
+
+<div class="content">
+  <h1>Burger King Malaysia</h1>
+  <p>What are you craving today? Burgers? Snacks? Dessert? Whatever you want, you can save more with our Digital Coupons! Just show them to our cashiers before you place your order! #BurgerKingMY</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
